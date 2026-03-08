@@ -631,10 +631,27 @@ footer {
 }
 
 @media (max-width: 900px) {
+    .nav-content {
+        padding: 0 20px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-links a:not(.nav-btn) {
+        display: none !important;
+    }
+
     .hero {
         flex-direction: column;
         text-align: center;
         margin-top: 100px;
+        gap: 40px;
+    }
+
+    .hero-title {
+        font-size: clamp(2rem, 10vw, 3.5rem);
     }
 
     .cta-group {
@@ -647,14 +664,39 @@ footer {
 
     .glass-mockup {
         transform: none;
+        max-width: 100%;
     }
 
     .glass-mockup:hover {
         transform: translateY(-5px);
     }
 
-    .feature-grid {
-        grid-template-columns: 1fr;
+    .feature-grid,
+    .testimonial-grid,
+    .stats-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px;
+    }
+
+    .stats-container {
+        padding: 0;
+    }
+
+    .step {
+        flex-direction: column !important;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .step-number {
+        font-size: 4rem;
+        top: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .reverse-step .step-number {
+        right: auto;
     }
 }
 
@@ -690,8 +732,9 @@ footer {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.15;
-    filter: invert(1) sepia(1) hue-rotate(220deg) saturate(5) brightness(1.5);
+    opacity: 0.2;
+    /* Simplified filter for better cross-browser compatibility */
+    filter: brightness(0.8) sepia(1) hue-rotate(220deg) saturate(2);
 }
 
 .ping {
