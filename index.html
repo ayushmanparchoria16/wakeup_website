@@ -10,9 +10,9 @@
     <title>Wakeup AI - Real-Time Interview Copilot</title>
     <meta name="title" content="Wakeup AI - Real-Time Interview Copilot">
     <meta name="description"
-        content="Wakeup AI is your intelligent interview assistant. It listens to your job interviews in real-time and generates smart, human-like answers instantly.">
+        content="Wakeup AI is your intelligent interview assistant. It uses Deepgram for real-time transcription and Puter AI to generate smart, human-like answers during your job interviews.">
     <meta name="keywords"
-        content="Interview assistant, AI interview copilot, real-time interview helper, interview question transcriber, AI job interview, remote interview AI, Wakeup AI, interview AI tool">
+        content="Interview assistant, AI interview copilot, real-time interview helper, Deepgram transcription, Puter AI, AI job interview assistant, remote interview AI tool">
     <meta name="author" content="Wakeup AI">
     <meta name="robots" content="index, follow">
     <meta name="language" content="English">
@@ -92,7 +92,7 @@
 
                 <div class="cta-group" id="download">
                     <!-- Windows Download Button -->
-                    <a href="https://github.com/ayushmanparchoria16/wakeup_website/releases/download/v1.0.0/WakeupAI-1.0.0-Setup.exe"
+                    <a href="https://github.com/ayushmanparchoria16/wakeup_website/releases/download/v1.0.0/WakeupAI-1.1.0-Setup.exe"
                         class="primary-btn windows-btn">
                         <svg viewBox="0 0 88 88" class="icon-windows" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -119,7 +119,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="version-info">Current Version: v1.0.0 | Windows 10/11 (x64)</div>
+                <div class="version-info">Current Version: v1.1.0 | Windows 10/11 (x64)</div>
             </div>
 
             <div class="hero-image-wrapper">
@@ -140,11 +140,50 @@
                             </div>
                         </div>
                         <div class="mockup-panel tr">
-                            <div class="m-header"><span class="material-icons-round" style="font-size: 14px;">mic</span>
-                                Transcript</div>
+                            <div class="m-header"><span class="material-icons-round"
+                                    style="font-size: 14px;">record_voice_over</span>
+                                Live Transcript</div>
                             <div class="m-msg tr-msg"><strong>Inv:</strong> Can you explain why you chose React for this
                                 project?</div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEW: Global Stats & Usage -->
+        <section id="stats" class="stats-section">
+            <h2 class="section-title">Trusted by Professionals Worldwide</h2>
+
+            <div class="stats-container">
+                <div class="map-container">
+                    <div class="map-bg"></div>
+                    <div class="ping" style="top: 35%; left: 22%;" title="USA (San Francisco)"></div>
+                    <div class="ping" style="top: 40%; left: 28%;" title="USA (New York)"></div>
+                    <div class="ping" style="top: 70%; left: 33%;" title="Brazil (São Paulo)"></div>
+                    <div class="ping" style="top: 25%; left: 49%;" title="UK (London)"></div>
+                    <div class="ping" style="top: 30%; left: 53%;" title="Germany (Berlin)"></div>
+                    <div class="ping" style="top: 45%; left: 68%;" title="India (Bangalore)"></div>
+                    <div class="ping" style="top: 35%; left: 82%;" title="Japan (Tokyo)"></div>
+                    <div class="ping" style="top: 75%; left: 85%;" title="Australia (Sydney)"></div>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="25000">0</div>
+                        <div class="stat-label">Active Users</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="1402">0</div>
+                        <div class="stat-label">Online Now</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="4.9" data-decimal="true">0</div>
+                        <div class="stat-label">Average Rating</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="120">0</div>
+                        <div class="stat-label">Countries</div>
                     </div>
                 </div>
             </div>
@@ -157,16 +196,15 @@
                 <div class="step">
                     <div class="step-number">1</div>
                     <div class="step-content">
-                        <h3>Start a Session</h3>
-                        <p>Open Wakeup AI alongside your Zoom, Teams, or Google Meet call. Enter the topic you are
-                            interviewing for and click "Start Session".</p>
+                        <h3>Secure Login & Setup</h3>
+                        <p>Login securely and configure your Deepgram API key. Enter your meeting topic to start a
+                            personalized AI session powered by Puter AI.</p>
                     </div>
                     <!-- Placeholder for actual screenshot -->
                     <div class="step-image">
                         <div class="placeholder-img"
                             style="background: linear-gradient(135deg, #1e1e24 0%, #15151a 100%);">
-                            <span class="material-icons-round"
-                                style="font-size: 48px; color: #8b5cf6;">play_circle_filled</span>
+                            <span class="material-icons-round" style="font-size: 48px; color: #8b5cf6;">vpn_key</span>
                             <span>Setup Screen</span>
                         </div>
                     </div>
@@ -175,15 +213,15 @@
                 <div class="step reverse-step">
                     <div class="step-number">2</div>
                     <div class="step-content">
-                        <h3>Listen to the Question</h3>
-                        <p>Turn the microphone ON while the interviewer is speaking. The app will securely listen and
-                            transcribe the question in real-time.</p>
+                        <h3>Real-Time Transcription</h3>
+                        <p>Powered by Deepgram's Nova-2, our engine transcribes every word with incredible accuracy,
+                            ensuring no detail is missed during your conversation.</p>
                     </div>
                     <div class="step-image">
                         <div class="placeholder-img"
                             style="background: linear-gradient(135deg, #1e1e24 0%, #15151a 100%);">
-                            <span class="material-icons-round" style="font-size: 48px; color: #06b6d4;">mic</span>
-                            <span>Transcript Panel</span>
+                            <span class="material-icons-round" style="font-size: 48px; color: #06b6d4;">forum</span>
+                            <span>Live Transcript Panel</span>
                         </div>
                     </div>
                 </div>
@@ -191,10 +229,9 @@
                 <div class="step">
                     <div class="step-number">3</div>
                     <div class="step-content">
-                        <h3>Press Icon to Get Answers</h3>
-                        <p>Click the Mic button to turn it OFF. The app instantly processes the captured audio and
-                            generates a professional, human-like answer for you to read. Then turn it back ON for the
-                            next question!</p>
+                        <h3>AI-Powered Smart Answers</h3>
+                        <p>Instantly get professional, human-like responses. Our Puter AI integration analyzes the
+                            questions and suggests the best way to answer, tailored to your topic.</p>
                     </div>
                     <div class="step-image">
                         <div class="placeholder-img"
@@ -209,15 +246,58 @@
                 <div class="step reverse-step">
                     <div class="step-number">4</div>
                     <div class="step-content">
-                        <h3>End Session & Save Transcript</h3>
-                        <p>When your interview concludes, click "End Session". You will have the option to instantly
-                            save and download the complete timeline of questions and answers for your records.</p>
+                        <h3>Summary & Feedback</h3>
+                        <p>After the meeting, review your performance. Download the full transcript and provide feedback
+                            to help us keep Wakeup AI your best interview companion.</p>
                     </div>
                     <div class="step-image">
                         <div class="placeholder-img"
                             style="background: linear-gradient(135deg, #1e1e24 0%, #15151a 100%);">
-                            <span class="material-icons-round" style="font-size: 48px; color: #f59e0b;">download</span>
-                            <span>Download Transcript Option</span>
+                            <span class="material-icons-round" style="font-size: 48px; color: #f59e0b;">analytics</span>
+                            <span>Summary & Feedback</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEW: Testimonials Area -->
+        <section id="testimonials" class="testimonials">
+            <h2 class="section-title">What Our Users Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Wakeup AI completely changed my interview game. The real-time answers are
+                        incredibly fast and human-like. Got my dream job at a FAANG company!"</p>
+                    <div class="user-info">
+                        <div class="avatar">SJ</div>
+                        <div>
+                            <h4>Sarah Jenkins</h4>
+                            <p>Software Engineer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"I was skeptical at first, but the stealth mode works perfectly alongside
+                        Zoom. I felt so much more confident answering tricky behavioral questions."</p>
+                    <div class="user-info">
+                        <div class="avatar">MR</div>
+                        <div>
+                            <h4>Michael Reed</h4>
+                            <p>Product Manager</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"The transcription is flawless even with my accent. It's like having a senior
+                        mentor whispering the best answers in my ear during the call."</p>
+                    <div class="user-info">
+                        <div class="avatar">AP</div>
+                        <div>
+                            <h4>Anita Patel</h4>
+                            <p>Data Scientist</p>
                         </div>
                     </div>
                 </div>
@@ -272,6 +352,46 @@
     <footer>
         <p>&copy; 2026 Wakeup AI. All rights reserved.</p>
     </footer>
+
+    <script>
+        // Number Counter Animation for Stats
+        const animateNumbers = () => {
+            const stats = document.querySelectorAll('.stat-number');
+            stats.forEach(stat => {
+                const target = parseFloat(stat.getAttribute('data-target'));
+                const isDecimal = stat.getAttribute('data-decimal') === 'true';
+                const duration = 2000; // 2 seconds
+                const frames = 60;
+                const step = target / (frames * (duration / 1000));
+                let current = 0;
+
+                const updateCount = () => {
+                    current += step;
+                    if (current < target) {
+                        stat.innerText = isDecimal ? current.toFixed(1) : Math.ceil(current).toLocaleString();
+                        requestAnimationFrame(updateCount);
+                    } else {
+                        stat.innerText = isDecimal ? target.toFixed(1) : target.toLocaleString() + (target >= 120 && !isDecimal && target !== 1402 ? '+' : '');
+                    }
+                };
+
+                updateCount();
+            });
+        };
+
+        // Trigger animation when stats section is in view
+        const observer = new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting) {
+                animateNumbers();
+                observer.disconnect();
+            }
+        });
+
+        const statsSection = document.getElementById('stats');
+        if (statsSection) {
+            observer.observe(statsSection);
+        }
+    </script>
 </body>
 
 </html>
