@@ -377,6 +377,19 @@
                         requestAnimationFrame(updateCount);
                     } else {
                         stat.innerText = isDecimal ? target.toFixed(1) : target.toLocaleString() + (target >= 120 && !isDecimal && target !== 1402 ? '+' : '');
+
+                        // New: Fluctuating "Online Now" effect
+                        if (target === 1402) {
+                            let baseValue = 1402;
+                            setInterval(() => {
+                                const fluctuation = Math.floor(Math.random() * 7) - 3; // -3 to +3
+                                baseValue += fluctuation;
+                                // Keep it in a reasonable range
+                                if (baseValue < 1395) baseValue = 1395;
+                                if (baseValue > 1410) baseValue = 1410;
+                                stat.innerText = baseValue.toLocaleString();
+                            }, 2500);
+                        }
                     }
                 };
 
