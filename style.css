@@ -591,7 +591,7 @@ body {
     width: 100%;
     padding: 14px;
     background: white;
-    color: black !important;
+    color: black;
     text-align: center;
     font-weight: 700;
     border-radius: 12px;
@@ -601,7 +601,7 @@ body {
 
 .pricing-action .nav-btn.secondary-btn {
     background: transparent;
-    color: white !important;
+    color: white;
     border: 1px solid rgba(255,255,255,0.2);
 }
 
