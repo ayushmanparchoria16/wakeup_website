@@ -601,7 +601,7 @@ body {
 
 .pricing-action .nav-btn.secondary-btn {
     background: transparent;
-    color: white;
+    color: white !important;
     border: 1px solid rgba(255,255,255,0.2);
 }
 
