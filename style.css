@@ -568,15 +568,18 @@ body {
 
 .pricing-features li {
     display: flex;
-    align-items: center;
+    align-items: flex-start; /* Changed from center so wrapped text aligns at top */
     gap: 12px;
     margin-bottom: 15px;
     color: #e2e8f0;
+    line-height: 1.4;
 }
 
 .pricing-features .material-icons-round {
     color: var(--secondary);
     font-size: 20px;
+    flex-shrink: 0; /* Prevents the icon from squeezing when text wraps */
+    margin-top: 2px; /* Slight visual tweak to align with text */
 }
 
 .pricing-action {
