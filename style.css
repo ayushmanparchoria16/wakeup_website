@@ -63,6 +63,44 @@ body {
     z-index: -1;
 }
 
+/* Promo Banner */
+.promo-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(90deg, #7c3aed 0%, #db2777 100%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    z-index: 1001;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.promo-banner strong {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-family: inherit;
+    font-weight: 700;
+}
+
+.promo-banner a {
+    color: white;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.promo-banner a:hover {
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+
 /* Navbar */
 .navbar {
     padding: 20px 0;
@@ -70,7 +108,7 @@ body {
     background: rgba(9, 9, 11, 0.7);
     backdrop-filter: blur(10px);
     position: fixed;
-    top: 0;
+    top: 40px;
     width: 100%;
     z-index: 100;
 }
@@ -149,7 +187,7 @@ body {
 /* Hero Section */
 .hero {
     max-width: 1200px;
-    margin: 150px auto 100px;
+    margin: 190px auto 100px;
     padding: 0 40px;
     display: flex;
     align-items: center;
