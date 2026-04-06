@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2240%22 fill=%22%238b5cf6%22/></svg>">
+    <title>Pricing - Interviewbold</title>
+    <meta name="description" content="Simple and transparent pricing for Interviewbold. Choose from our Free Demo, BYOK, or Premium Copilot plans.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="noise-overlay"></div>
+
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="index.html" class="logo" style="text-decoration: none; color: inherit;">
+                <div class="logo-icon">
+                    <div class="pulse-ring"></div>
+                </div>
+                <span>Interviewbold</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html#features">Features</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="index.html#download" class="nav-btn">Download Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="content-page">
+        <section class="pricing">
+            <div class="content-header">
+                <h1 class="gradient-text">Simple Transparent Pricing</h1>
+                <p class="hero-subtitle" style="margin: 0 auto; margin-bottom: 40px;">Choose the plan that fits your interview preparation needs. No hidden fees.</p>
+                
+                <!-- Pricing Toggle -->
+                <div class="pricing-toggle">
+                    <span class="toggle-label active" id="monthly-label">Monthly</span>
+                    <div class="toggle-switch" id="billing-toggle"></div>
+                    <span class="toggle-label" id="yearly-label">Yearly</span>
+                    <span class="discount-badge">20% OFF</span>
+                </div>
+            </div>
+            
+            <div class="pricing-grid">
+                <!-- Premium Tier -->
+                <div class="pricing-card premium-tier">
+                    <div class="pricing-badge">RECOMMENDED</div>
+                    <h3>Premium Copilot</h3>
+                    <div class="price" id="premium-price">$29<span>/month</span></div>
+                    <p class="pricing-desc">Hassle-free AI. Instant access, zero setup required. Your ultimate interview sidekick.</p>
+                    <ul class="pricing-features">
+                        <li><span class="material-icons-round">check_circle</span> Unlimited AI Responses</li>
+                        <li><span class="material-icons-round">check_circle</span> Ultra-low latency transcription</li>
+                        <li><span class="material-icons-round">check_circle</span> Priority Support</li>
+                        <li><span class="material-icons-round">check_circle</span> Use code <strong style="color:var(--accent);">LAUNCH20</strong> for 20% off</li>
+                    </ul>
+                    <div class="pricing-action">
+                        <a href="index.html#download" class="nav-btn" style="display: block; text-align: center; width: 100%; border: none;">Get Started Now</a>
+                    </div>
+                </div>
+
+                <!-- Demo Tier -->
+                <div class="pricing-card">
+                    <h3>Try Demo</h3>
+                    <div class="price">$0<span>/test</span></div>
+                    <p class="pricing-desc">Perfect for testing the interface to see if Interviewbold is right for you, instantly.</p>
+                    <ul class="pricing-features">
+                        <li><span class="material-icons-round">check_circle</span> 5 Questions per Session</li>
+                        <li><span class="material-icons-round">check_circle</span> Jump right into your test</li>
+                        <li><span class="material-icons-round">check_circle</span> Requires free Puter login</li>
+                    </ul>
+                    <div class="pricing-action">
+                        <a href="index.html#download" class="nav-btn secondary-btn" style="display: block; text-align: center; width:100%;">Try for Free</a>
+                    </div>
+                </div>
+
+                <!-- BYOK Tier -->
+                <div class="pricing-card">
+                    <h3>Bring Your Own Keys</h3>
+                    <div class="price">$0<span>/forever</span></div>
+                    <p class="pricing-desc">Bring your own Deepgram API keys and use Interviewbold absolutely free.</p>
+                    <ul class="pricing-features">
+                        <li><span class="material-icons-round">check_circle</span> Unlimited lifetime usage</li>
+                        <li><span class="material-icons-round">check_circle</span> Secure local key storage</li>
+                        <li><span class="material-icons-round">check_circle</span> BYOK Developer Mode</li>
+                    </ul>
+                    <div class="pricing-action">
+                        <a href="index.html#download" class="nav-btn secondary-btn" style="display: block; text-align: center; width:100%;">Setup BYOK</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature Comparison Section -->
+        <section class="comparison-section">
+            <h2 class="section-title">Compare Features</h2>
+            <div class="comparison-table-wrapper">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Demo</th>
+                            <th>BYOK</th>
+                            <th>Premium</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="feature">Real-time Transcription</td>
+                            <td><span class="material-icons-round check">check_circle</span></td>
+                            <td><span class="material-icons-round check">check_circle</span></td>
+                            <td><span class="material-icons-round check">check_circle</span></td>
+                        </tr>
+                        <tr>
+                            <td class="feature">AI Question Analysis</td>
+                            <td>5 / session</td>
+                            <td>Unlimited</td>
+                            <td>Unlimited</td>
+                        </tr>
+                        <tr>
+                            <td class="feature">Transcript Export</td>
+                            <td><span class="material-icons-round close">cancel</span></td>
+                            <td><span class="material-icons-round check">check_circle</span></td>
+                            <td><span class="material-icons-round check">check_circle</span></td>
+                        </tr>
+                        <tr>
+                            <td class="feature">Latency Optimization</td>
+                            <td>Standard</td>
+                            <td>By Key</td>
+                            <td>Ultra-Low</td>
+                        </tr>
+                        <tr>
+                            <td class="feature">Technical Support</td>
+                            <td>Community</td>
+                            <td>Developer</td>
+                            <td>Priority 24/7</td>
+                        </tr>
+                        <tr>
+                            <td class="feature">Stealth Overlay</td>
+                            <td><span class="material-icons-round check">check_circle</span></td>
+                            <td><span class="material-icons-round check">check_circle</span></td>
+                            <td><span class="material-icons-round check">check_circle</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="content-container" style="margin-top: 100px;">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h4>What is the "BYOK" plan?</h4>
+                        <span class="material-icons-round accordion-icon">expand_more</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>BYOK stands for "Bring Your Own Key". If you have your own Deepgram API key, you can use our software's full capabilities for free. We don't charge you; you only pay Deepgram for what you use (they have a generous free tier too!). This is perfect for developers or those who already have infrastructure API keys.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h4>Can I cancel my Premium subscription?</h4>
+                        <span class="material-icons-round accordion-icon">expand_more</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Yes, you can cancel your subscription at any time through your account dashboard. You will retain access until the end of your billing period. We believe in total flexibility for our users.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h4>Is there an annual billing discount?</h4>
+                        <span class="material-icons-round accordion-icon">expand_more</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Absolutely! If you choose yearly billing, you save 20% compared to monthly billing. That's equivalent to getting nearly 2.5 months for free! You can toggle between monthly and yearly rates at the top of this page.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h4>Do I need a credit card for the Demo?</h4>
+                        <span class="material-icons-round accordion-icon">expand_more</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>No credit card is required to try the Demo. You just need to download the app and sign in with a free Puter account to start your trial sessions immediately.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Billing Toggle Logic
+        const toggle = document.getElementById('billing-toggle');
+        const premiumPrice = document.getElementById('premium-price');
+        const monthlyLabel = document.getElementById('monthly-label');
+        const yearlyLabel = document.getElementById('yearly-label');
+
+        toggle.addEventListener('click', () => {
+            toggle.classList.toggle('yearly');
+            
+            if (toggle.classList.contains('yearly')) {
+                premiumPrice.innerHTML = '$279<span>/year</span>';
+                monthlyLabel.classList.remove('active');
+                yearlyLabel.classList.add('active');
+            } else {
+                premiumPrice.innerHTML = '$29<span>/month</span>';
+                monthlyLabel.classList.add('active');
+                yearlyLabel.classList.remove('active');
+            }
+        });
+
+        // FAQ Accordion Logic
+        const accordionHeaders = document.querySelectorAll('.accordion-header');
+        
+        accordionHeaders.forEach(header => {
+            header.addEventListener('click', () => {
+                const item = header.parentElement;
+                const isActive = item.classList.contains('active');
+                
+                // Close all other items
+                document.querySelectorAll('.accordion-item').forEach(i => i.classList.remove('active'));
+                
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+    </script>
+
+    <footer>
+        <div class="content-container">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+                <p>&copy; 2026 Interviewbold. All rights reserved.</p>
+                <div style="display: flex; gap: 20px;">
+                    <a href="terms.html" style="color: var(--text-muted); text-decoration: none;">Terms</a>
+                    <a href="privacy.html" style="color: var(--text-muted); text-decoration: none;">Privacy</a>
+                    <a href="refund.html" style="color: var(--text-muted); text-decoration: none;">Refunds</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

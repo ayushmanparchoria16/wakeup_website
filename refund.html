@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2240%22 fill=%22%238b5cf6%22/></svg>">
+    <title>Refund Policy - Interviewbold</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="noise-overlay"></div>
+
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="index.html" class="logo" style="text-decoration: none; color: inherit;">
+                <div class="logo-icon">
+                    <div class="pulse-ring"></div>
+                </div>
+                <span>Interviewbold</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html#features">Features</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="index.html#download" class="nav-btn">Download Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="content-page">
+        <div class="content-container">
+            <div class="content-header">
+                <h1>Refund Policy</h1>
+                <p class="last-updated">Last Updated: April 6, 2026</p>
+            </div>
+
+            <div class="policy-layout">
+                <!-- Table of Contents Sidebar -->
+                <aside class="policy-toc">
+                    <h3>Refund Info</h3>
+                    <ul>
+                        <li><a href="#eligibility">1. Eligibility</a></li>
+                        <li><a href="#non-refundable">2. Non-Refundable</a></li>
+                        <li><a href="#request">3. How to Request</a></li>
+                        <li><a href="#processing">4. Processing Time</a></li>
+                        <li><a href="#cancellation">5. Cancellation</a></li>
+                    </ul>
+                </aside>
+
+                <div class="content-body">
+                    <section id="eligibility">
+                        <h2>1. Refund Eligibility</h2>
+                        <p>We want you to be completely satisfied with Interviewbold. If you are not satisfied with our Premium Copilot service, you may be eligible for a refund under the following conditions:</p>
+                        <ul>
+                            <li>The refund request is made within 7 days of the initial subscription purchase.</li>
+                            <li>You have experienced technical issues that prevent you from using the service effectively.</li>
+                            <li>You have not exceeded a reasonable amount of AI usage (e.g., more than 3 full interview sessions).</li>
+                        </ul>
+                    </section>
+
+                    <section id="non-refundable">
+                        <h2>2. Non-Refundable Items</h2>
+                        <p>The following items are generally non-refundable:</p>
+                        <ul>
+                            <li>Renewals of existing subscriptions.</li>
+                            <li>Subscriptions purchased more than 7 days ago.</li>
+                            <li>Promotional or discounted purchases, unless there is a significant technical failure.</li>
+                        </ul>
+                    </section>
+
+                    <section id="request">
+                        <h2>3. How to Request a Refund</h2>
+                        <p>To request a refund, please email us at support@interviewbold.in with your account details and the reason for your request. We will review your request and notify you of the approval or rejection of your refund within 3-5 business days.</p>
+                    </section>
+
+                    <section id="processing">
+                        <h2>4. Processing Refunds</h2>
+                        <p>If your refund is approved, it will be processed, and a credit will automatically be applied to your original method of payment within 7-10 business days.</p>
+                    </section>
+
+                    <section id="cancellation">
+                        <h2>5. Cancellation</h2>
+                        <p>You can cancel your subscription at any time. Cancellation will stop any future billing, but no refunds will be issued for the remaining period of the current billing cycle unless the request meets the 7-day criteria above.</p>
+                    </section>
+                </div>
+            </div>
+
+            <!-- Footer CTA -->
+            <div style="margin-top: 80px; text-align: center; background: rgba(139,92,246,0.05); padding: 60px; border-radius: 20px; border: var(--glass-border);">
+                <h2 style="font-family: 'Outfit', sans-serif; margin-bottom: 20px;">Still Unsure?</h2>
+                <p style="color: var(--text-muted); margin-bottom: 30px; font-size: 1.1rem;">Try our Free Demo first to see if Interviewbold fits your needs.</p>
+                <a href="pricing.html" class="nav-btn" style="display: inline-flex; width: auto; margin: 0 auto; padding: 15px 40px; background: white; color: black !important;">View Pricing</a>
+            </div>
+        </div>
+    </main>
+
+    <a href="#" class="back-to-top" id="back-to-top">
+        <span class="material-icons-round">arrow_upward</span>
+    </a>
+
+    <script>
+        // Back to top button visibility
+        const backToTop = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        // ToC Active Link Highlight on Scroll
+        const sections = document.querySelectorAll('section[id]');
+        const tocLinks = document.querySelectorAll('.policy-toc a');
+
+        window.addEventListener('scroll', () => {
+            let current = "";
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (window.scrollY >= sectionTop - 150) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            tocLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+
+    <footer>
+        <div class="content-container">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+                <p>&copy; 2026 Interviewbold. All rights reserved.</p>
+                <div style="display: flex; gap: 20px;">
+                    <a href="terms.html" style="color: var(--text-muted); text-decoration: none;">Terms</a>
+                    <a href="privacy.html" style="color: var(--text-muted); text-decoration: none;">Privacy</a>
+                    <a href="refund.html" style="color: var(--text-muted); text-decoration: none;">Refunds</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

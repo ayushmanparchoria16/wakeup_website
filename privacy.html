@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2240%22 fill=%22%238b5cf6%22/></svg>">
+    <title>Privacy Policy - Interviewbold</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="noise-overlay"></div>
+
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="index.html" class="logo" style="text-decoration: none; color: inherit;">
+                <div class="logo-icon">
+                    <div class="pulse-ring"></div>
+                </div>
+                <span>Interviewbold</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html#features">Features</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="index.html#download" class="nav-btn">Download Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="content-page">
+        <div class="content-container">
+            <div class="content-header">
+                <h1>Privacy Policy</h1>
+                <p class="last-updated">Last Updated: April 6, 2026</p>
+            </div>
+
+            <div class="policy-layout">
+                <!-- Table of Contents Sidebar -->
+                <aside class="policy-toc">
+                    <h3>Legal Navigation</h3>
+                    <ul>
+                        <li><a href="#introduction">1. Introduction</a></li>
+                        <li><a href="#collection">2. Data Collection</a></li>
+                        <li><a href="#usage">3. Usage</a></li>
+                        <li><a href="#security">4. Security</a></li>
+                        <li><a href="#cookies">5. Cookies</a></li>
+                        <li><a href="#rights">6. Your Rights</a></li>
+                        <li><a href="#contact">7. Contact</a></li>
+                    </ul>
+                </aside>
+
+                <div class="content-body">
+                    <section id="introduction">
+                        <h2>1. Introduction</h2>
+                        <p>Your privacy is important to us. It is Interviewbold's policy to respect your privacy regarding any information we may collect from you across our website and application.</p>
+                    </section>
+
+                    <section id="collection">
+                        <h2>2. Information We Collect</h2>
+                        <p>We only ask for personal information when we truly need it to provide a service to you. We collect it by fair and lawful means, with your knowledge and consent.</p>
+                        <ul>
+                            <li><strong>Account Information:</strong> If you register for an account, we collect your name and email address.</li>
+                            <li><strong>Usage Data:</strong> We may collect information on how the service is accessed and used.</li>
+                            <li><strong>API Keys:</strong> In BYOK mode, your Deepgram API key is stored securely on your local device and is never sent to our servers except to facilitate the transcription service.</li>
+                        </ul>
+                    </section>
+
+                    <section id="usage">
+                        <h2>3. How We Use Information</h2>
+                        <p>We use the collected information for various purposes, including to provide and maintain the service, notify you about changes, and provide customer support.</p>
+                    </section>
+                    
+                    <section id="security">
+                        <h2>4. Data Security</h2>
+                        <p>We use industry-standard security measures to protect your personal information. However, no method of transmission over the internet or method of electronic storage is 100% secure.</p>
+                        <p><strong>Crucially:</strong> All audio transcription is handled through Deepgram. We do not store your interview audio or transcripts on our servers unless you explicitly choose to save them to your account for review.</p>
+                    </section>
+
+                    <section id="cookies">
+                        <h2>5. Cookies</h2>
+                        <p>We use cookies and similar tracking technologies to track the activity on our service and hold certain information.</p>
+                    </section>
+
+                    <section id="rights">
+                        <h2>6. Your Data Rights</h2>
+                        <p>You have the right to access, update, or delete the information we have on you. Whenever made possible, you can access, update, or request deletion of your personal information directly within your account settings section.</p>
+                    </section>
+
+                    <section id="contact">
+                        <h2>7. Contact Us</h2>
+                        <p>If you have any questions about this Privacy Policy, please contact us at support@interviewbold.in.</p>
+                    </section>
+                </div>
+            </div>
+
+            <!-- Footer CTA -->
+            <div style="margin-top: 80px; text-align: center; background: linear-gradient(135deg, rgba(34,197,94,0.1) 0%, rgba(6,182,212,0.1) 100%); padding: 60px; border-radius: 20px; border: 1px solid rgba(34,197,94,0.2);">
+                <h2 style="font-family: 'Outfit', sans-serif; margin-bottom: 20px;">Your Privacy, Our Priority</h2>
+                <p style="color: var(--text-muted); margin-bottom: 30px; font-size: 1.1rem;">Focus on your interview answers, we'll handle the security.</p>
+                <a href="index.html#download" class="nav-btn secondary-btn" style="display: inline-flex; width: auto; margin: 0 auto; padding: 15px 40px; border-color: var(--secondary);">Learn More</a>
+            </div>
+        </div>
+    </main>
+
+    <a href="#" class="back-to-top" id="back-to-top">
+        <span class="material-icons-round">arrow_upward</span>
+    </a>
+
+    <script>
+        // Back to top button visibility
+        const backToTop = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        // ToC Active Link Highlight on Scroll
+        const sections = document.querySelectorAll('section[id]');
+        const tocLinks = document.querySelectorAll('.policy-toc a');
+
+        window.addEventListener('scroll', () => {
+            let current = "";
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (window.scrollY >= sectionTop - 150) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            tocLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+
+    <footer>
+        <div class="content-container">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+                <p>&copy; 2026 Interviewbold. All rights reserved.</p>
+                <div style="display: flex; gap: 20px;">
+                    <a href="terms.html" style="color: var(--text-muted); text-decoration: none;">Terms</a>
+                    <a href="privacy.html" style="color: var(--text-muted); text-decoration: none;">Privacy</a>
+                    <a href="refund.html" style="color: var(--text-muted); text-decoration: none;">Refunds</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
