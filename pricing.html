@@ -56,16 +56,37 @@
                 <div class="pricing-card premium-tier">
                     <div class="pricing-badge">RECOMMENDED</div>
                     <h3>Premium Copilot</h3>
-                    <div class="price" id="premium-price">$29<span>/month</span></div>
+
+                    <!-- International pricing -->
+                    <div style="margin-bottom: 6px;">
+                        <div style="display:flex; align-items:baseline; gap:8px; flex-wrap:wrap;">
+                            <div class="price" id="premium-price" style="margin:0;"><s style="opacity:0.45; font-size:1.1rem;">$29</s> <span style="font-size:2rem;">$5.80</span><span>/month</span></div>
+                        </div>
+                        <div style="font-size:0.75rem; color:var(--accent); margin-top:4px;">💳 Card / PayPal &mdash; Use code <strong>LAUNCH80</strong> for 80% off</div>
+                    </div>
+
+                    <!-- Divider -->
+                    <div style="display:flex;align-items:center;gap:10px;margin:12px 0;">
+                        <div style="flex:1;height:1px;background:rgba(255,255,255,0.1);"></div>
+                        <span style="font-size:0.75rem;color:var(--text-muted);">or</span>
+                        <div style="flex:1;height:1px;background:rgba(255,255,255,0.1);"></div>
+                    </div>
+
+                    <!-- UPI India pricing -->
+                    <div style="margin-bottom: 14px;">
+                        <div class="price" style="margin:0; color:#4da6ff;">&#8377;199<span>/month</span></div>
+                        <div style="font-size:0.75rem; color:#4da6ff; margin-top:4px;">&#127470;&#127475; UPI &mdash; Popular in India. Verified within 1 hour.</div>
+                    </div>
+
                     <p class="pricing-desc">Hassle-free AI. Instant access, zero setup required. Your ultimate interview sidekick.</p>
                     <ul class="pricing-features">
                         <li><span class="material-icons-round">check_circle</span> Unlimited AI Responses</li>
                         <li><span class="material-icons-round">check_circle</span> Ultra-low latency transcription</li>
                         <li><span class="material-icons-round">check_circle</span> Priority Support</li>
-                        <li><span class="material-icons-round">check_circle</span> Use code <strong style="color:var(--accent);">LAUNCH20</strong> for 20% off</li>
+                        <li><span class="material-icons-round">check_circle</span> Pay via Card, PayPal or UPI</li>
                     </ul>
                     <div class="pricing-action">
-                        <a href="index.html#download" class="nav-btn" style="display: block; text-align: center; width: 100%; border: none;">Get Started Now</a>
+                        <a href="index.html#download" class="nav-btn" style="display: block; text-align: center; width: 100%; border: none;">Download &amp; Subscribe</a>
                     </div>
                 </div>
 
@@ -99,7 +120,7 @@
                     </div>
                 </div>
             <div style="text-align: center; margin-top: 40px; color: var(--text-muted); font-size: 0.9rem;">
-                <p><span class="material-icons-round" style="font-size: 1rem; vertical-align: middle;">security</span> Secure payment processing by <strong>Paddle</strong>. Paddle is the Merchant of Record for this order.</p>
+                <p><span class="material-icons-round" style="font-size: 1rem; vertical-align: middle;">security</span> Secure international payments by <strong>Paddle</strong>. UPI payments verified manually within 1 hour.</p>
             </div>
         </section>
 
@@ -185,7 +206,7 @@
                         <span class="material-icons-round accordion-icon">expand_more</span>
                     </div>
                     <div class="accordion-content">
-                        <p>Absolutely! If you choose yearly billing, you save 20% compared to monthly billing. That's equivalent to getting nearly 2.5 months for free! You can toggle between monthly and yearly rates at the top of this page.</p>
+                        <p>Absolutely! If you choose yearly billing, you save 20% compared to monthly billing. Instead of $5.80/month (billed monthly), you pay just $55.70/year &mdash; saving around 20%. That's equivalent to getting more than 2 months for free! You can toggle between monthly and yearly rates at the top of this page.</p>
                     </div>
                 </div>
                 <div class="accordion-item">
@@ -212,11 +233,11 @@
             toggle.classList.toggle('yearly');
             
             if (toggle.classList.contains('yearly')) {
-                premiumPrice.innerHTML = '$279<span>/year</span>';
+                premiumPrice.innerHTML = '<s style="opacity:0.45; font-size:1.1rem;">$348</s> <span style="font-size:2rem;">$55.70</span><span>/year</span>';
                 monthlyLabel.classList.remove('active');
                 yearlyLabel.classList.add('active');
             } else {
-                premiumPrice.innerHTML = '$29<span>/month</span>';
+                premiumPrice.innerHTML = '<s style="opacity:0.45; font-size:1.1rem;">$29</s> <span style="font-size:2rem;">$5.80</span><span>/month</span>';
                 monthlyLabel.classList.add('active');
                 yearlyLabel.classList.remove('active');
             }
